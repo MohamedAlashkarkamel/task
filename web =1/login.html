@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> hi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+    <a href="#" class="logo">logo</a>
+    <ul>
+         <li> <a href="main.html" class="">Home</a></li>
+        <li><a href="main.html" class="">About</a></li>
+        <li><a href="login.html" class="">Login</a></li>
+        <li><a href="main.html" class="">Contact us</a></li>
+
+    </ul>
+</header>
+<section>
+    <img src="stars.png" id="star">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <img src="mountains_front.png" id="mountains_front">
+</section>
+<div class="bg2">
+    <div class="cont1">
+      <div>
+        <div>
+          <div >Login</div><br>
+          <div >
+            <div>
+              <label>E-mail</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter Your Email"/><br>
+            </div><br>
+            <div>
+              <label >Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter Your Password"/>
+            </div><br>
+            <button type="button" class="btn1">
+              Login
+            </button>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let star=document.getElementById('star')
+    let moon=document.getElementById('moon')
+     
+     window.addEventListener('scroll',function(){
+        let value =window.scrollY;
+        star.style.left=value*0.25+'px'; 
+        moon.style.top=value*1.25+'px';    })
+</script>
+</body>
+</html>
